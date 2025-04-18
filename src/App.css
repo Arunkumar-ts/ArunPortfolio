@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(241, 230, 220);
+}
+
+/* NavBar */
+.my-resume:hover {
+  border: 2px solid rgb(245, 209, 143) !important;
+}
+.my-resume {
+  padding: 3px 10px !important;
+  border-radius: 20px !important;
+  background: linear-gradient(to left, orange, red) !important;
+  color: white !important;
+}
+.offCanvaButton {
+  box-shadow: none !important;
+}
+.brand {
+  font-family: serif;
+  background: linear-gradient(to left, orange, red) !important;
+  background-clip: text !important;
+  color: transparent !important;
+  font-weight: 600;
+}
+.link:hover {
+  color: rgb(250, 114, 3) !important;
+}
+
+/* Home */
+.my-detail {
+  position: relative;
+  height: 70vh;
+}
+.my-detail #h5-top {
+  margin-top: 80px;
+  @media (max-width: 500px) {
+    margin-top: 0px;
+  }
+}
+.my-detail h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(to right, orange, red, yellow);
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+}
+.my-detail p {
+  width: 50%;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+.portfolio_img {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.social-link {
+  color: white;
+  background-color: #e78b48;
+  padding: 1px 5px 5px 5px;
+  margin: 3px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.my-resume1 {
+  background: linear-gradient(to left, orangered, red) !important;
+  background-clip: text !important;
+  color: transparent !important;
+  padding: 3px 10px !important;
+  border-radius: 20px !important;
+  border: 1px solid orangered !important;
+}
+
+/* About me */
+.about-me-detail {
+  position: relative;
+  height: 90vh;
+}
