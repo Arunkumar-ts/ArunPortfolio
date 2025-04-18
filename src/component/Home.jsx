@@ -21,7 +21,7 @@ const Home = () => {
     let date = new Date();
     let fullDate = String(date).slice(0,16)
     const link = document.createElement('a');
-    link.href = 'Arun ts - Resume.pdf'; 
+    link.href = '/files/Arun ts - Resume.pdf'; 
     link.download = `Arun ts - Resume ${fullDate}.pdf`;
     document.body.appendChild(link);
     link.click();
