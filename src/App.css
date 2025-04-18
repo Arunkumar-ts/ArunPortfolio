@@ -20,11 +20,16 @@ html {
 }
 
 /* NavBar */
+.navbarContainer {
+  position: sticky;
+  top: 1px;
+  z-index: 100;
+}
 .my-resume:hover {
   border: 2px solid rgb(245, 209, 143) !important;
 }
 .my-resume {
-  padding: 3px 10px !important;
+  padding: 6px 15px !important;
   border-radius: 20px !important;
   background: linear-gradient(to left, orange, red) !important;
   color: white !important;
@@ -37,24 +42,24 @@ html {
   background: linear-gradient(to left, orange, red) !important;
   background-clip: text !important;
   color: transparent !important;
-  font-weight: 600;
+  font-weight: 700;
 }
 .link:hover {
   color: rgb(250, 114, 3) !important;
 }
 
 /* Home */
+#homePage {
+  height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .my-detail {
   position: relative;
-  height: 70vh;
 }
-.my-detail #h5-top {
-  margin-top: 80px;
-  @media (max-width: 500px) {
-    margin-top: 0px;
-  }
-}
-.my-detail h2 {
+
+.my-detail h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: linear-gradient(to right, orange, red, yellow);
   background-clip: text;
@@ -70,27 +75,39 @@ html {
 .portfolio_img {
   position: absolute;
   right: 0px;
-  top: 0px;
+  top: -30px;
+}
+.portfolio_img:hover {
+  animation: profile 0.3s linear infinite;
+}
+@keyframes profile {
+  to {
+    transform: rotate(-5deg);
+  }
+  from {
+    transform: rotate(5deg);
+  }
 }
 .social-link {
   color: white;
   background-color: #e78b48;
-  padding: 1px 5px 5px 5px;
-  margin: 3px;
+  padding: 3px 8px 8px 8px;
+  margin: 5px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
-
-.my-resume1 {
-  background: linear-gradient(to left, orangered, red) !important;
-  background-clip: text !important;
-  color: transparent !important;
-  padding: 3px 10px !important;
-  border-radius: 20px !important;
-  border: 1px solid orangered !important;
+.social-link:hover {
+  padding: 6px 10px 10px 10px;
+  transition: all 0.2s linear;
 }
 
 /* About me */
+#aboutMePage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .about-me-detail {
   position: relative;
   height: 90vh;
