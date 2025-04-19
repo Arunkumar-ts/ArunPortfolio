@@ -1,0 +1,65 @@
+[
+    {
+    "id":1,
+    "title":"CRUD Using Firebase",
+    "image":"Firebase.jpg",
+    "discription":"This project is a simple CRUD (Create, Read, Update, Delete) web application built using HTML, CSS, and JavaScript, with Firebase as the backend. Users can add, view, update, and delete data in real-time. Firebase Realtime Database is used to store and manage the data. The app features a clean user interface and is fully responsive for use on both desktop and mobile devices.",
+    "live_link":"https://arunkumar-ts.github.io/FB_CRUD/"
+    },
+    {
+    "id":2,
+    "title":"Memory Game ",
+    "image":"memory game card.jpg",
+    "discription":"The Memory Game is a fun and interactive web game created using HTML, CSS, and JavaScript. The goal of the game is to match all pairs of cards by remembering their positions. When a user clicks two matching cards, they stay flipped; if not, they flip back. The game is fully responsive and works smoothly on both desktop and mobile devices. This project focuses on JavaScript logic and responsive design techniques.",
+    "live_link":"https://arunkumar-ts.github.io/MemoryGame1/"
+    },
+    {
+    "id":3,
+    "title":"FLAMES App",
+    "image":"Flames app.jpg",
+    "discription":"This is a fun FLAMES (Friends, Love, Affection, Marriage, Enemy, Siblings) web application built using HTML, CSS, and JavaScript. The user enters two names, and the app calculates the relationship result based on the classic FLAMES game logic. The design is fully responsive, making it usable on both mobile and desktop screens. It’s an engaging project that combines basic JavaScript logic with a user-friendly interface.",
+    "live_link":"https://arunkumar-ts.github.io/Flames/"
+    },
+    {
+    "id":4,
+    "title":"Calculator App",
+    "image":"Calculator Logo.jpg",
+    "discription":"This is a basic calculator application built using HTML, CSS, and JavaScript. It performs standard arithmetic operations like addition, subtraction, multiplication, and division. The calculator features a responsive design, making it easy to use on both desktop and mobile devices. The focus of the project is on DOM manipulation, event handling, and a clean, user-friendly interface.",
+    "live_link":"https://arunkumar-ts.github.io/calculator/"
+    },
+    {
+    "id":5,
+    "title":"BMI Calculator",
+    "image":"BMI Calculator.jpg",
+    "discription":"This is a Body Mass Index (BMI) calculator web application developed using React. Users can input their height and weight to calculate their BMI, which helps indicate whether they are underweight, normal, overweight, or obese. The app focuses on React state management and component-based structure.",
+    "live_link":"https://bmicalculator-arun.netlify.app/"
+    },
+    {
+    "id":6,
+    "title":"Calendar App",
+    "image":"Calendar logo.jpg",
+    "discription":"This is a calendar web application developed using React. It displays a monthly calendar view and allows users to navigate between different months and years. The app highlights the current date and offers a clean user interface. The project showcases React component structure and state management.",
+    "live_link":"https://calendar-arun.netlify.app/"
+    },
+    {
+    "id":7,
+    "title":"Student Form",
+    "image":"Student Registration form.jpg",
+    "discription":"This is a basic student registration form built using HTML, CSS, and JavaScript. The form allows users to enter student details such as name, age, email, course, and more. JavaScript is used to handle form validation and display the submitted data.",
+    "live_link":"https://arunkumar-ts.github.io/studentform/"
+    },
+    {
+    "id":8,
+    "title":"E-commerce Page",
+    "image":"E-commerce app.jpg",
+    "discription":"This is a static single-page e-commerce website designed using HTML and CSS. The page includes a product section, navigation bar, and a simple layout showcasing products with images, names, and prices. The focus of the project is on clean design and layout structure using only HTML and CSS.",
+    "live_link":"https://arunkumar-ts.github.io/Aditii_ECOM/"
+    },
+    {
+    "id":9,
+    "title":"Weather App",
+    "image":"Weather app.jpg",
+    "discription":"This is a weather application developed using React and integrated with a Weather API. Users can enter a city name to get real-time weather information such as temperature, weather condition, humidity, and more. The app is built using functional components and React hooks for managing state and API requests.",
+    "live_link":"https://weather-arun.web.app/"
+    }
+]

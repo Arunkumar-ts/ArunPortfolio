@@ -1,0 +1,31 @@
+[
+    {
+    "id":1,
+    "title":"Currency Converter",
+    "image":"Currency Converter Box Overview.jpg",
+    "discription":"The Currency Converter is a web application built using React JS that allows users to convert amounts between different currencies in real-time. It uses a public Currency Converter API to fetch the latest exchange rates.The app is designed with a clean and responsive user interface for ease of use on both desktop and mobile devices.",
+    "live_link":"https://currency-arun.netlify.app"
+    },
+    {
+    "id":2,
+    "title":"QR Code Generator",
+    "image":"QR Code Generator.jpg",
+    "discription":"The QR Code Generator is a web application built using React JS that allows users to easily generate QR codes from any text or URL. It uses a public Currency Converter API to fetch the image.",
+    "live_link":"https://qrcode-arun.netlify.app"
+    },
+    {
+    "id":3,
+    "title":"E-commerce App",
+    "image":"E-commerce app.jpg",
+    "discription":"This is a responsive E-commerce web application developed using HTML, CSS, and JavaScript. It allows users to browse products, view product details. The website is fully responsive, providing a smooth user experience on both desktop and mobile devices. The main focus of the project is on dynamic interactions using JavaScript and a clean, user-friendly design.",
+    "live_link":"https://arunkumar-ts.github.io/Nestra_ECOM/"
+    },
+    {
+    "id":4,
+    "title":"Tic Tac Toe Game",
+    "image":"tic tac toe game.jpg",
+    "discription":"This is a classic Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows two players to take turns and play on a 3x3 grid. It includes game logic to check for a winner or a draw after each move. The design is responsive, so it works well on both desktop and mobile devices. The main goal of this project is to practice JavaScript logic and responsive web design.",
+    "live_link":"https://arunkumar-ts.github.io/OX_game/"
+    }
+
+]

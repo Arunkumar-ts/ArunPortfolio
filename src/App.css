@@ -24,25 +24,38 @@ html {
   position: sticky;
   top: 1px;
   z-index: 100;
+  box-shadow: 0 0 800px orangered  !important;
 }
 .my-resume:hover {
   border: 2px solid rgb(245, 209, 143) !important;
+  box-shadow: 0 0 5px orange !important;
 }
 .my-resume {
   padding: 6px 15px !important;
   border-radius: 20px !important;
   background: linear-gradient(to left, orange, red) !important;
   color: white !important;
+  box-shadow: 0 0 100px orangered  !important;
+
 }
 .offCanvaButton {
   box-shadow: none !important;
+  box-shadow: 0 0 100px orangered  !important;
+
 }
-.brand {
+.brand a,
+.brand h2 {
   font-family: serif;
   background: linear-gradient(to left, orange, red) !important;
   background-clip: text !important;
   color: transparent !important;
   font-weight: 700;
+  text-decoration: none !important;
+  text-shadow: 0 0 70px orangered;  
+}
+.link{
+  font-size: 20px !important;
+  font-weight: 600 !important;
 }
 .link:hover {
   color: rgb(250, 114, 3) !important;
@@ -50,7 +63,7 @@ html {
 
 /* Home */
 #homePage {
-  height: 83vh;
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,13 +101,21 @@ html {
     transform: rotate(5deg);
   }
 }
+.smallIntro{
+  font-weight: 500;
+  font-size: 20px;
+  @media (max-width:500px) {
+    font-size: 16px;
+    
+  }
+}
 .social-link {
-  color: white;
-  background-color: #e78b48;
-  padding: 3px 8px 8px 8px;
+  color: black;
+  background-color: #f17f2e;
+  padding: 1px 5px 5px 5px;
   margin: 5px;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  font-size: 25px;
 }
 .social-link:hover {
   padding: 6px 10px 10px 10px;
@@ -103,12 +124,75 @@ html {
 
 /* About me */
 #aboutMePage {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .about-me-detail {
   position: relative;
-  height: 90vh;
+}
+.custom-orangered .progress-bar {
+  background: linear-gradient(to left, yellow, orange, red);
+
+}
+
+/* Products */
+#projectsPage {
+  background-color: "rgba(255, 165, 0,0.1)";
+  position: relative;
+  padding: 10px;
+}
+.showML {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.textShadow{
+  color: orangered;
+  text-shadow: 0 0 30px orangered, 0 0 50px orangered;
+}
+.showML-btn {
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
+  color: blueviolet;
+  outline: none;
+}
+.showML-btn:hover {
+  color: orangered;
+}
+
+/* ContactMe*/
+.inputEmail:focus {
+  border: 1px solid orangered !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.formemail{
+  box-shadow: 0 0 300px rgba(228, 109, 65,0.6)  !important;
+}
+.formemail:hover{
+  box-shadow: 0 0 30px rgba(228, 109, 65,0.6)  !important;
+
+}
+/* card */
+.bordercord {
+  border-bottom: 5px solid orangered !important;
+  transition: all 0.4s linear !important;
+}
+.project {
+  flex-wrap: wrap;
+  margin: 20px 10px;
+}
+.bordercord:hover {
+  animation: cordHover 0.5s linear 1 !important;
+}
+@keyframes cordHover {
+  from {
+    transform: rotateX(-10deg);
+  }
+  to {
+    transform: rotateX(10deg);
+  }
 }
