@@ -10,7 +10,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Collapse from "react-bootstrap/Collapse";
 import { IoIosSend } from "react-icons/io";
 import Form from "react-bootstrap/Form";
@@ -19,7 +19,7 @@ import Swal from "sweetalert2";
 import impProject from "../impProject.json";
 import Projects from "../Projects.json";
 import { TypeAnimation } from "react-type-animation";
-import ProgressBar from 'react-bootstrap/ProgressBar';
+import ProgressBar from "react-bootstrap/ProgressBar";
 
 const Home = () => {
   const [show, setShow] = useState(false);
@@ -41,19 +41,24 @@ const Home = () => {
 
   const [open, setOpen] = useState(false);
 
+  const formRef = useRef(null);
+
   const handleEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(
-      "service_bqny6as",
-      "template_7ki2589",
-      e.target,
-      "AIKTpf7fxGxi_2N36"
-    );
+    // console.log(e.target);
+
+    // emailjs.sendForm(
+    //   "service_bqny6as",
+    //   "template_7ki2589",
+    //   e.target,
+    //   "AIKTpf7fxGxi_2N36"
+    // );
     Swal.fire({
       title: "Success!",
       text: "Message sent successfully!",
       icon: "success",
     });
+    formRef.current.reset();
   };
 
   return (
@@ -236,10 +241,10 @@ const Home = () => {
             <ProgressBar className="custom-orangered" now={70} />
 
             <h5>Java</h5>
-            <ProgressBar className="custom-orangered" now={90}/>
-            
+            <ProgressBar className="custom-orangered" now={90} />
+
             <h5>Python</h5>
-            <ProgressBar className="custom-orangered" now={60}/>
+            <ProgressBar className="custom-orangered" now={60} />
 
             <h5>JavaScript</h5>
             <ProgressBar className="custom-orangered" now={90} />
@@ -309,7 +314,7 @@ const Home = () => {
           Contact <span className="textShadow">Me</span>
         </h2>
         <Container>
-          <Form className="formemail rounded p-3" onSubmit={handleEmail}>
+          <Form className="formemail rounded p-3" onSubmit={handleEmail} ref={formRef}>
             <Form.Group className="mb-3">
               <Form.Label>Full Name</Form.Label>
               <Form.Control

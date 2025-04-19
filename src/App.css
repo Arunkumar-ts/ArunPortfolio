@@ -24,11 +24,10 @@ html {
   position: sticky;
   top: 1px;
   z-index: 100;
-  box-shadow: 0 0 800px orangered  !important;
+  box-shadow: 0 0 500px orangered  !important;
 }
 .my-resume:hover {
   border: 2px solid rgb(245, 209, 143) !important;
-  box-shadow: 0 0 5px orange !important;
 }
 .my-resume {
   padding: 6px 15px !important;
