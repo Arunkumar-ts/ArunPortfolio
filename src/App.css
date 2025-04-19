@@ -34,7 +34,7 @@ html {
   border-radius: 20px !important;
   background: linear-gradient(to left, orange, red) !important;
   color: white !important;
-  box-shadow: 0 0 100px orangered  !important;
+  box-shadow: 0 0 50px rgba(255, 69, 0,0.4)  !important;
 
 }
 .offCanvaButton {

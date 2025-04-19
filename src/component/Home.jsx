@@ -45,14 +45,13 @@ const Home = () => {
 
   const handleEmail = (e) => {
     e.preventDefault();
-    // console.log(e.target);
 
-    // emailjs.sendForm(
-    //   "service_bqny6as",
-    //   "template_7ki2589",
-    //   e.target,
-    //   "AIKTpf7fxGxi_2N36"
-    // );
+    emailjs.sendForm(
+      "service_bqny6as",
+      "template_7ki2589",
+      e.target,
+      "AIKTpf7fxGxi_2N36"
+    );
     Swal.fire({
       title: "Success!",
       text: "Message sent successfully!",
@@ -314,7 +313,11 @@ const Home = () => {
           Contact <span className="textShadow">Me</span>
         </h2>
         <Container>
-          <Form className="formemail rounded p-3" onSubmit={handleEmail} ref={formRef}>
+          <Form
+            className="formemail rounded p-3"
+            onSubmit={handleEmail}
+            ref={formRef}
+          >
             <Form.Group className="mb-3">
               <Form.Label>Full Name</Form.Label>
               <Form.Control
