@@ -180,29 +180,35 @@ const Home = () => {
             user-friendly applications. Always eager to learn and grow in the
             tech field.
           </p>
-          <div className="mt-4">
-            <a className="social-link" href="https://github.com/arunkumar-ts">
-              <FaGithub />
-            </a>
-            <a
-              className="social-link  "
-              href="https://www.linkedin.com/in/arunkumar-ts2005"
-            >
-              <FaLinkedin />
-            </a>
-            <a className="social-link " href="https://wa.me/9342772857">
-              <FaWhatsapp />
-            </a>
+          <div className="mt-4 d-flex">
+              <a  href="https://github.com/arunkumar-ts">
+                <div className="social-link ">
+                    <FaGithub />
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/arunkumar-ts2005">
+                <div className="social-link ">
+                    <FaLinkedin />
+                </div>
+              </a>
+
+              <a  href="https://wa.me/9342772857">
+                <div className="social-link ">
+                    <FaWhatsapp />
+                </div>
+              </a>
+
           </div>
           <a href="#contactMePage">
-            <Button variant="light" className="my-resume mt-5 me-2 ">
+            <Button variant="light" className="my-resume mt-3 me-2 ">
               contact me <FaArrowRight />
             </Button>
           </a>
 
           <Button
             variant="light"
-            className="my-resume mt-5 "
+            className="my-resume mt-3 "
             onClick={handleDownload}
           >
             my resume <MdDownloading />
@@ -218,7 +224,7 @@ const Home = () => {
 
       {/* AboutMe */}
       <Container id="aboutMePage">
-        <div className=".about-me-detail mt-0 mt-md-5 pt-0 pt-md-5">
+        <div className=".about-me-detail ">
           <h2>
             About <span className="textShadow">Me</span>
           </h2>
@@ -234,7 +240,7 @@ const Home = () => {
             and continuously seek opportunities to enhance my skills and
             contribute to meaningful software development projects.
           </p>
-          <h2 className="textShadow text-black my-3">Skils</h2>
+          <h2 className="textShadow text-black mt-5 mb-3">Skils</h2>
           <div>
             <h5>C++</h5>
             <ProgressBar className="custom-orangered" now={70} />
@@ -255,7 +261,7 @@ const Home = () => {
       </Container>
 
       {/* Projects */}
-      <Container id="projectsPage" className="mt-0 mt-md-5 pt-0 pt-md-5">
+      <Container id="projectsPage" className="">
         <h2>
           <span className="textShadow">My</span> Projects
         </h2>

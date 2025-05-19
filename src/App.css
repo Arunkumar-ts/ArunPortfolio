@@ -24,7 +24,7 @@ html {
   position: sticky;
   top: 1px;
   z-index: 100;
-  box-shadow: 0 0 500px orangered  !important;
+  box-shadow: 0 0 500px rgba(255, 68, 0, 0.301)  !important;
 }
 .my-resume:hover {
   border: 2px solid rgb(245, 209, 143) !important;
@@ -109,21 +109,27 @@ html {
   }
 }
 .social-link {
-  color: black;
+  color: white;
   background-color: #f17f2e;
-  padding: 1px 5px 5px 5px;
+  width: 45px;
+  height: 45px;
   margin: 5px;
   border-radius: 50%;
   font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .social-link:hover {
   padding: 6px 10px 10px 10px;
   transition: all 0.2s linear;
+  color: black;
 }
 
 /* About me */
 #aboutMePage {
-  height: 90vh;
+  /* height: 90vh; */
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,6 +147,7 @@ html {
   background-color: "rgba(255, 165, 0,0.1)";
   position: relative;
   padding: 10px;
+  margin-top: 35px;
 }
 .showML {
   display: flex;
@@ -164,15 +171,15 @@ html {
 
 /* ContactMe*/
 .inputEmail:focus {
-  border: 1px solid orangered !important;
+  /* border: 1px solid orangered !important; */
   box-shadow: none !important;
   outline: none !important;
 }
 .formemail{
-  box-shadow: 0 0 300px rgba(228, 109, 65,0.6)  !important;
+  box-shadow: 0 0 60px rgba(228, 108, 65, 0.295)  !important;
 }
 .formemail:hover{
-  box-shadow: 0 0 30px rgba(228, 109, 65,0.6)  !important;
+  box-shadow: 0 0 30px rgba(228, 108, 65, 0.329)  !important;
 
 }
 /* card */
